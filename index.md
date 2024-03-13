@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: blog
-title: Home Page
+title: Check Rooms Availability
 ---
 
 <h1>MMCC</h1>
