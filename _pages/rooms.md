@@ -15,8 +15,9 @@ title: Check Rooms Availability
         </a>
       </h2>
       <p>{{ room.details }}
-      <br>Location:  {{ room.location }}
-      <br>Capacity:  {{ room.capacity }}</p>
+        <br>Location: {{ room.location }}
+        <br>Capacity: {{ room.capacity }}
+      </p>
     </div>
 
   </article>
