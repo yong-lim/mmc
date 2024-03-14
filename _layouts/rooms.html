@@ -7,7 +7,27 @@
     <main id="main" role="main">
       <h1>{{ page.title }}</h1>
 
-      {{ content }}
+      <div class="grid">
+
+        {%- for room in site.data.rooms -%}
+
+        <article role="article" class="card">
+          <a target="_blank" rel="noopener noreferrer" href="{{ room.link }}">
+            <div class="meta">
+              <h2>
+                  {{ room.name }}
+              </h2>
+              <p>{{ room.details }}
+                <br>Capacity: {{ room.capacity }}
+                <br>Location: {{ room.location }}
+              </p>
+            </div>
+          </a>
+        </article>
+
+        {%- endfor -%}
+
+      </div>
     </main>
 
   </body>
