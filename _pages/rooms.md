@@ -8,18 +8,17 @@ title: Check Rooms Availability
   {%- for room in site.data.rooms -%}
 
   <article role="article" class="card">
-    <div class="meta">
-      <h2>
-        <a target="_blank" rel="noopener noreferrer" href="{{ room.link }}">
-          {{ room.name }}
-        </a>
-      </h2>
-      <p>{{ room.details }}
-        <br>Location: {{ room.location }}
-        <br>Capacity: {{ room.capacity }}
-      </p>
-    </div>
-
+    <a target="_blank" rel="noopener noreferrer" href="{{ room.link }}">
+      <div class="meta">
+        <h2>
+            {{ room.name }}
+        </h2>
+        <p>{{ room.details }}
+          <br>Capacity: {{ room.capacity }}
+          <br>Location: {{ room.location }}
+        </p>
+      </div>
+    </a>
   </article>
 
   {%- endfor -%}
